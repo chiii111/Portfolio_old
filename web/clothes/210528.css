@@ -1,0 +1,84 @@
+/* -------------------------------sec_main_nav------------------------------- */
+.sec_main_nav h2{
+    width: 1;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+/* -------------------------------sec_main_nav------------------------------- */
+/* -------------------------------sec_new_in------------------------------- */
+.sec_new_in .wrap::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.sec_new_in .wrap > *{
+    float: left;
+}
+.sec_new_in .main_title_goods,
+.sec_new_in .goods_group{
+    float: right;
+}
+/* .side_option_group,
+.page_path_group,
+.main_title_goods,
+.goods_group{
+    float: left;
+} */
+.sec_new_in .main_title h1{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+.goods_group h2{
+    font-size: 18px;
+}
+@media screen and (max-width: 767px){
+    .sec_new_in{
+        padding-top: 0;
+    }
+    .sec_new_in .main_title{
+        padding-top: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sec_new_in .wrap{
+        padding: 0;
+    }
+    .sec_new_in .main_title,
+    .sec_new_in .goods_group{
+        width: 80%;
+        margin-left: auto;
+    }
+    .sec_new_in .main_title{
+        padding-top: 40px;
+    }
+    .sec_new_in .side_option_group,
+    .sec_new_in .page_path_group,
+    .sec_new_in .main_title,
+    .sec_new_in .goods_group{
+        box-sizing: border-box;
+    }
+    .sec_new_in .side_option_group{
+        padding-left: 15px;
+    }
+    .sec_new_in .page_path_group,
+    .sec_new_in .main_title{
+        padding-right: 15px;
+    }
+    .sec_new_in .goods_group{
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* .sec_new_in .goods_item:nth-child(4n+1){
+        margin-left: -8px;
+    }
+    .sec_new_in .goods_item:nth-child(4n){
+        margin-right: -8px;
+    } */
+}
+/* -------------------------------sec_new_in------------------------------- */

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 - onni</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="210523.css">
+    <link rel="stylesheet" href="210605_shop_prograess.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="210828_clothes.js"></script>
+</head>
+<body>
+    <!-- -------------------------------sec_main_nav------------------------------- -->
+    <div class="container sec_main_nav">
+        <div class="wrap">
+            <div class="logo">
+                <h1>onni</h1>
+                <a href="210520_index.html">
+                    <picture>
+                        <source media="(min-width: 1200px )" srcset="img/1200/mainNav_logo_1200@2x.webp">
+                        <img src="img/375/mainNav_logo_-1@2x.webp" alt="onni_main_logo">
+                    </picture>
+                </a>
+            </div>
+            <nav class="nav_group">
+                <ul class="main_nav_group">
+                    <li class="main_nav_item nav_new_in">
+                        <a href="210528_goods_all.html">本周新品</a>
+                    </li>
+                    <li class="main_nav_item nav_hot_sale">
+                        <a href="210528_goods_all.html">熱銷推薦</a>
+                    </li>
+                    <li class="main_nav_item nav_goods_cat">
+                        <a href="210528_goods_all.html">商品分類</a>
+                        <button>
+                            <img src="img/375/shoppingDetail_arrow_down_375@2x.webp" alt="nav_arrow_down">
+                        </button>
+                        <ul class="sub_nav_group">
+                            <li class="sub_nav_item">
+                                <a href="210528_goods_all.html">上衣</a>
+                            </li>
+                            <li class="sub_nav_item">
+                                <a href="210528_goods_all.html">下著</a>
+                            </li>
+                            <li class="sub_nav_item">
+                                <a href="210528_goods_all.html">洋裝&連身</a>
+                            </li>
+                            <li class="sub_nav_item">
+                                <a href="210528_goods_all.html">外套&罩衫</a>
+                            </li>
+                            <li class="sub_nav_item">
+                                <a href="210528_goods_all.html">鞋類&包包</a>
+                            </li>
+                            <li class="sub_nav_item">
+                                <a href="210528_goods_all.html">配件&飾品</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_nav_item nav_on_sale">
+                        <a href="210528_goods_all.html">SALE</a>
+                    </li>
+                    <li class="main_nav_item nav_fast_ship">
+                        <a href="210528_goods_all.html">快速出貨</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="btn_group">
+                <li class="btn_item btn_search">
+                    <a href="javascript:;">
+                        <img src="img/375/mainNav_searchIcon_-1@2x.webp" alt="nav_searchIcon">   
+                    </a>
+                    <div class="btn_search_group">
+                        <form action="">
+                            <input type="text">
+                            <button>
+                                <img src="img/375/mainNav_searchIcon_-1@2x.webp" alt="btn_search">
+                            </button>
+                        </form>
+                    </div>
+                </li>
+                <li class="btn_item btn_hb">
+                    <a href="javascript:;">
+                        <img class="btn_hb_open" src="img/375/mainNav_hbIcon_375@2x.webp" alt="btn_hb">
+                        <img class="btn_hb_close" src="img/375/closeBtn_375@2x.webp" alt="btn_hb">
+                    </a>
+                </li>
+                <li class="btn_item btn_home">
+                    <a href="210520_index.html">
+                        <img src="img/375/navBar_btnHome_375@2x.webp" alt="nav_home">
+                    </a>
+                </li>
+                <li class="btn_item btn_goods_love">
+                    <a href="210528_goods_all.html">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/1200/goodsLove_btn_1200@2x.webp">
+                            <img src="img/375/navBar_btnLove_375@2x.webp" alt="btn_search">
+                        </picture>
+                    </a>
+                </li>
+                <li class="btn_item btn_shopcart">
+                    <a href="210604_shop_cart.html">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/1200/mainNav_shopCartBtn_1200@2x.webp">
+                            <img src="img/375/navBar_btnShoppingCart_375@2x.webp" alt="btn_search">
+                        </picture>
+                    </a>
+                </li>
+                <li class="btn_item btn_member">
+                    <a href="210528_goods_all.html">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/1200/mainNav_memberBtn_1200@2x.webp">
+                            <img src="img/375/navBar_btnMember_375@2x.webp" alt="btn_input_search">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- -------------------------------sec_main_nav------------------------------- -->
+    <!-- -------------------------------sec_shop_prograess------------------------------- -->
+    <section class="container sec_shop_prograess">
+        <div class="wrap">
+            <ol class="title_group">
+                <li class="title_item title_prograess_now">
+                    <h1>1. 購物明細</h1>
+                    <div class="title_pic">
+                        <img src="img/1200/checkOut_arrow_right_black_1200@2x.webp" alt="arrow_right">
+                    </div>
+                </li>
+                <li class="title_item">
+                    <span>2. 資料確認</span>
+                    <div class="title_pic">
+                        <img src="img/375/checkOut_arrow_right_gray_375@2x.webp" alt="arrow_right">
+                    </div>
+                </li>
+                <li class="title_item">
+                    <span>3. 購物完成</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- -------------------------------sec_shop_prograess------------------------------- -->
+    <!-- -------------------------------sec_shop_cart------------------------------- -->
+    <section class="container sec_shop_cart">
+        <div class="wrap">
+            <div class="shop_cart">
+                <table class="shop_cart_table">
+                    <thead>
+                        <tr class="shop_product_cat">
+                            <th class="product_item product_info" scope="col">
+                                <div class="product_checkbox">
+                                    <input type="checkbox" name="" id="product_checkbox_all">
+                                    <label for="product_checkbox_all">
+                                        <div class="product_sel_all">
+                                            <span>全選</span>
+                                        </div>
+                                        <div class="product_name">
+                                            <span>商品名稱</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </th>
+                            <th class="product_item product_size_color" scope="col">尺寸&顏色</th>
+                            <th class="product_item sel_count" scope="col">數量</th>
+                            <th class="product_item product_price" scope="col">售價</th>
+                            <th class="product_item product_subtotal" scope="col">小計</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="product_group">
+                            <th class="product_item product_info" scope="row">
+                                <div class="product_checkbox">
+                                    <input type="checkbox" name="item" id="product_checkbox_1">
+                                    <label for="product_checkbox_1">
+                                        <a href="#">
+                                            <div class="product_name">
+                                                <h3>毛衣純色毛線織V領上衣 3色</h3>
+                                            </div>
+                                            <div class="product_pic">
+                                                <picture>
+                                                    <source media="(min-width: 767px)" srcset="img/1200/shoppingDetail_img_pc@2x.webp">
+                                                    <img src="img/375/shoppingDetail_img_phone@2x.webp" alt="毛衣純色毛線織V領上衣 3色">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="product_item product_size_color">
+                                <select>
+                                    <option value="S-白色">S-白色</option>
+                                    <option value="M-白色">M-白色</option>
+                                    <option value="L-白色">L-白色</option>
+                                    <option value="XL-白色">XL-白色</option>
+                                    <option value="S-駝色">S-駝色</option>
+                                    <option value="M-駝色">M-駝色</option>
+                                    <option value="L-駝色">L-駝色</option>
+                                    <option value="XL-駝色">XL-駝色</option>
+                                    <option value="S-粉色">S-粉色</option>
+                                    <option value="M-粉色">M-粉色</option>
+                                    <option value="L-粉色">L-粉色</option>
+                                    <option value="XL-粉色">XL-粉色</option>
+                                </select>
+                            </td>
+                            <td class="product_item product_count sel_count">
+                                <div class="sel_btn_group">
+                                        <div class="sel_btn_item sel_count_down">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="sel_btn_item sel_count_num">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="sel_btn_item sel_count_up">
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="product_item product_price">
+                                <div class="price_group">
+                                    <span class="price-total">351</span>
+                                    <span class="price-original">390</span>
+                                </div>
+                            </td>
+                            <td class="product_item product_subtotal">
+                                <span>351</span>
+                            </td>
+                        </tr>
+                        <tr class="product_group">
+                            <th class="product_item product_info" scope="row">
+                                <div class="product_checkbox">
+                                    <input type="checkbox" name="item" id="product_checkbox_2">
+                                    <label for="product_checkbox_2">
+                                        <a href="#">
+                                            <div class="product_name">
+                                                <h3>毛衣純色毛線織V領上衣 3色</h3>
+                                            </div>
+                                            <div class="product_pic">
+                                                <picture>
+                                                    <source media="(min-width: 767px)" srcset="img/1200/shoppingDetail_img_pc-1@2x.webp">
+                                                    <img src="img/375/shoppingDetail_img_phone-1@2x.webp" alt="毛衣純色毛線織V領上衣 3色">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="product_item product_size_color">
+                                <select>
+                                    <option value="S-白色">S-白色</option>
+                                    <option value="M-白色">M-白色</option>
+                                    <option value="L-白色">L-白色</option>
+                                    <option value="XL-白色">XL-白色</option>
+                                    <option value="S-駝色">S-駝色</option>
+                                    <option value="M-駝色">M-駝色</option>
+                                    <option value="L-駝色">L-駝色</option>
+                                    <option value="XL-駝色">XL-駝色</option>
+                                    <option value="S-粉色">S-粉色</option>
+                                    <option value="M-粉色">M-粉色</option>
+                                    <option value="L-粉色">L-粉色</option>
+                                    <option value="XL-粉色">XL-粉色</option>
+                                </select>
+                            </td>
+                            <td class="product_item product_count sel_count">
+                                <div class="sel_btn_group">
+                                        <div class="sel_btn_item sel_count_down">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="sel_btn_item sel_count_num">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="sel_btn_item sel_count_up">
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="product_item product_price">
+                                <div class="price_group">
+                                    <span class="price-total">351</span>
+                                    <span class="price-original">390</span>
+                                </div>
+                            </td>
+                            <td class="product_item product_subtotal">
+                                <span>351</span>
+                            </td>
+                        </tr>
+                        <tr class="product_group">
+                            <th class="product_item product_info" scope="row">
+                                <div class="product_checkbox">
+                                    <input type="checkbox" name="item" id="product_checkbox_3">
+                                    <label for="product_checkbox_3">
+                                        <a href="#">
+                                            <div class="product_name">
+                                                <h3>毛衣純色毛線織V領上衣 3色</h3>
+                                            </div>
+                                            <div class="product_pic">
+                                                <picture>
+                                                    <source media="(min-width: 767px)" srcset="img/1200/shoppingDetail_img_pc-2@2x.webp">
+                                                    <img src="img/375/shoppingDetail_img_phone-2@2x.webp" alt="毛衣純色毛線織V領上衣 3色">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="product_item product_size_color">
+                                <select>
+                                    <option value="S-白色">S-白色</option>
+                                    <option value="M-白色">M-白色</option>
+                                    <option value="L-白色">L-白色</option>
+                                    <option value="XL-白色">XL-白色</option>
+                                    <option value="S-駝色">S-駝色</option>
+                                    <option value="M-駝色">M-駝色</option>
+                                    <option value="L-駝色">L-駝色</option>
+                                    <option value="XL-駝色">XL-駝色</option>
+                                    <option value="S-粉色">S-粉色</option>
+                                    <option value="M-粉色">M-粉色</option>
+                                    <option value="L-粉色">L-粉色</option>
+                                    <option value="XL-粉色">XL-粉色</option>
+                                </select>
+                            </td>
+                            <td class="product_item product_count sel_count">
+                                <div class="sel_btn_group">
+                                        <div class="sel_btn_item sel_count_down">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="sel_btn_item sel_count_num">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="sel_btn_item sel_count_up">
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="product_item product_price">
+                                <div class="price_group">
+                                    <span class="price-total">351</span>
+                                    <span class="price-original">390</span>
+                                </div>
+                            </td>
+                            <td class="product_item product_subtotal">
+                                <span>351</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="product_checkout">
+                            <th class="product_price_total" scope="row">
+                                <div class="price_group">
+                                    <span class="price_cat">小計</span>
+                                    <span class="price_unit">NT$</span>
+                                    <span class="price_total">958</span>
+                                </div>
+                            </th>
+                            <td class="checkout_btn">
+                                <!-- <button>結帳</button> -->
+                                <a href="210609_checkout.html">結帳</a>
+                            </td>
+                        </tr>
+                    </tfoot>  
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------sec_shop_cart------------------------------- -->
+    <!-- -------------------------------sec_footer------------------------------- -->
+    <section class="container sec_footer">
+        <div class="wrap">
+            <div class="main_title">
+                <h2>關於我們</h2>
+            </div>
+            <ul class="sns_group">
+                <li class="sns_item">
+                    <a href="https://www.facebook.com/" target="view_window">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/1200/footer_fbIcon_1200@2x.webp">
+                            <img src="img/375/footer_fbIcon_375@2x.webp" alt="facebook"></a>
+                        </picture>
+                </li>
+                <li class="sns_item">
+                    <a href="https://www.instagram.com/" target="view_window">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/1200/footer_igIcon_1200@2x.webp">
+                            <img src="img/375/footer_igIcon_375@2x.webp" alt="instagram"></a>
+                        </picture>
+                    </a>
+                </li>
+                <li class="sns_item">
+                    <a href="https://line.me/zh-hant/" target="view_window">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/1200/footer_lineIcon_1200@2x.webp">
+                            <img src="img/375/footer_lineIcon_375@2x.webp" alt="line"></a>
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+            <ul class="about_us_group">
+                <li class="about_us_item">
+                    <a href="210520_index.html">品牌簡介</a>
+                </li>
+                <li class="about_us_item">
+                    <a href="210520_index.html">售後服務</a>
+                </li>
+                <li class="about_us_item">
+                    <a href="210520_index.html">門市資訊</a>
+                </li>
+                <li class="about_us_item">
+                    <a href="210520_index.html">常見問題</a>
+                </li>
+                <li class="about_us_item">
+                    <a href="210520_index.html">隱私權維護</a>
+                </li>
+                <li class="about_us_item">
+                    <a href="210520_index.html">聯絡我們</a>
+                </li>
+            </ul>
+            <div class="open_time">
+                <span>周一至周五</span>
+                <div class="time">
+                    <span>9:30~12:30</span>
+                    <span>13:30~18:30</span>
+                </div>
+                <span>service@onni.com.tw</span>
+            </div>
+            <footer>copyright © 2021 onni</footer>
+        </div>
+    </section>
+    <!-- -------------------------------sec_footer------------------------------- -->
+</body>
+</html>
