@@ -527,6 +527,9 @@ section[class*="pageDisplay"] .workBg_detail_text{
     position: absolute;
     overflow: hidden;
 }
+section[class*="pageDisplay"] .workBg_btn_item a{
+    box-shadow: 0 0 0 7px #fff;
+}
 @media screen and (max-width: 375px) {
     section[class*="workContent"]{
         padding-top: 100px;
