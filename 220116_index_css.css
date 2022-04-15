@@ -164,7 +164,7 @@ h1,h2,h3,p,span,a{
     width: 100%;
     vertical-align: bottom;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     .sec_mainNav{
         height: 60px;
     }
@@ -410,6 +410,11 @@ h1,h2,h3,p,span,a{
 .mainKv_mascot{
     position: absolute;
 }
+.mainKv_workImg_group{
+    left: 0;
+    right: 0;
+
+}
 .mainKv_workImg_item{
     flex-shrink: 0;
     width: 100%;
@@ -446,7 +451,7 @@ h1,h2,h3,p,span,a{
 .mainKv_workImg_dot_box button.active{
     background-color: #D08479;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     .sec_mainKv .wrap{
         padding-top: 60px;
         flex-direction: column-reverse;
@@ -718,7 +723,7 @@ h1,h2,h3,p,span,a{
     background-color: #fff;
     border-color: #D08479;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     .sec_worksOverview .wrap{
         padding-top: 62px;
     }
@@ -889,7 +894,7 @@ h1,h2,h3,p,span,a{
     text-align: center;
     font-family: 'Noto Sans TC', sans-serif;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     .sec_footer::before{
         padding-top: 100px;
     }
@@ -1116,7 +1121,7 @@ h1,h2,h3,p,span,a{
 .introSkill_item .skillLevel{
     color: #D08479;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     .sec_aboutMe .wrap{
         padding-top: 140px;
     }
