@@ -465,6 +465,9 @@ h1,h2,h3,p,span,a{
         position: absolute;
         top: 40px;
     }
+    .mainKv_workImg_content{
+        padding-top: 20px;
+    }
     .mainKv_link_item:last-child{
         margin-top: 12px;
     }
