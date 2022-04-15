@@ -444,6 +444,7 @@ h1,h2,h3,p,span,a{
     justify-content: center;
 }
 .mainKv_workImg_dot_box button{
+    padding: 0;
     box-sizing: border-box;
     border: 3px solid #D08479;
     border-radius: 500px;
