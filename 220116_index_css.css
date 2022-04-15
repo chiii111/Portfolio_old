@@ -200,7 +200,7 @@ h1,h2,h3,p,span,a{
         top: calc(100vh - 180px);
     }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 416px) {
     .sec_mainNav{
         height: 100px;
     }
@@ -503,7 +503,7 @@ h1,h2,h3,p,span,a{
         margin-left: 12px;
     }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 416px) {
     .sec_mainKv .wrap{
         padding-top: 100px;
         flex-direction: column-reverse;
@@ -760,7 +760,7 @@ h1,h2,h3,p,span,a{
         font-size: 18px;
     }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 416px) {
     .sec_worksOverview .wrap{
         padding-top: 182px;
     }
@@ -899,7 +899,7 @@ h1,h2,h3,p,span,a{
         padding-top: 100px;
     }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 416px) {
     .sec_footer::before{
         padding-top: 100px;
     }
@@ -1197,7 +1197,7 @@ h1,h2,h3,p,span,a{
         padding-top: 8px;
     }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 416px) {
     .sec_aboutMe .wrap{
         padding-top: 100px;
     }
