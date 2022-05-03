@@ -133,6 +133,11 @@ h1,h2,h3,p,span,a{
 .goToTop_btn{
     position: fixed;
     z-index: 3;
+    transition: .8s;
+}
+.goToTop_btn.hide{
+    opacity: 0;
+    right: -100%;
 }
 .goToTop_btn a{
     text-decoration: none;
@@ -434,7 +439,7 @@ h1,h2,h3,p,span,a{
 .mainKv_workImgArrow_item{
     cursor: pointer;
     top: 50%;
-    transform: translate(-50%,0);
+    /* transform: translate(-50%,0); */
 }
 .mainKv_mascot{
     bottom: 0;

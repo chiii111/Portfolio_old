@@ -10,6 +10,19 @@ $(function(){
         $window.scrollTop(goToTopHeight);
     })
 
+    window_scrollTop = 0;
+    let mainNav_link_works_top = $(".mainNav_link_works").offset().top;
+    $window.scroll(function(){
+        window_scrollTop = $window.scrollTop();
+        if(window_scrollTop > mainNav_link_works_top){
+            $goToTop_btn.removeClass("hide")
+        }else{
+            $goToTop_btn.addClass("hide")
+        }
+    })
+
+
+
     //長出點
     let $mainKv_workImg_group = $(".mainKv_workImg_group");
     let $mainKv_workImg_item = $(".mainKv_workImg_item");
