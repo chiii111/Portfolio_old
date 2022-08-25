@@ -666,6 +666,8 @@ h1,h2,h3,p,span,a{
 .worksOverview_text{
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 }
 .worksOverview_mainTitle{
     display: flex;
@@ -716,6 +718,8 @@ h1,h2,h3,p,span,a{
 .worksOverview_item .viewMore_btn{
     align-self: center;
     order: 1;
+    position: relative;
+    z-index: 2;
 }
 .viewMore_btn a{
     text-decoration: none;
@@ -812,13 +816,15 @@ h1,h2,h3,p,span,a{
 }
 @media screen and (min-width: 992px) {
     .sec_worksOverview .wrap{
-        padding-top: 127px;
+        /* padding-top: 127px; */
+        padding-top: 260px;
     }
     .worksOverview_item{
         position: relative;
     }
     .worksOverview_item:not(:first-child){
-        margin-top: 140px;
+        /* margin-top: 140px; */
+        margin-top: 250px;
         padding-top: 0;
     }
     .worksOverview_text{
@@ -876,6 +882,8 @@ h1,h2,h3,p,span,a{
     }
     .worksOverview_img{
         max-width: 848px;
+        position: relative;
+        z-index: 1;
     }
     .worksOverview_item:nth-child(odd) .worksOverview_img{
         margin-left: auto;
