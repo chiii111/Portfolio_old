@@ -25,6 +25,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    transition: .5s;
 }
 .product_img_item{
     flex-shrink: 0;
@@ -274,6 +276,9 @@
         margin: 0;
         box-sizing: border-box;
         list-style: none;
+        position: relative;
+        left: 0;
+        transition: .5s;
     }
     .slider_img_sub{
         width: 106px;
