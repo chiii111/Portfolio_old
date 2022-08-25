@@ -136,3 +136,46 @@ $(function(){
         get_hash_top_workPage();
     })
 })
+
+//js滾動視差
+window.addEventListener('load', function() {
+    // 拿取物件
+    let worksOverview_item = document.querySelectorAll('.worksOverview_item');
+    let worksOverview_text = document.querySelectorAll('.worksOverview_text');
+    let worksOverview_img = document.querySelectorAll('.worksOverview_img');
+    let worksOverview_viewMore_btn = document.querySelectorAll('.viewMore_btn');
+
+    // 拿取數值
+    let sec_mainNav_height = document.querySelector('.sec_mainNav').offsetHeight;
+    let value = 0; //當前卷軸的滾動過的元素 初始值
+    let widowHeight = window.innerHeight;
+    let pageWidth = document.documentElement.scrollWidth;
+    console.log(worksOverview_item.offsetTop);
+    //console.log(getComputedStyle(worksOverview_text).getPropertyValue('top'));
+    console.log(pageWidth);
+
+    // 互動事件
+    window.addEventListener('resize', function() {
+        pageWidth = document.documentElement.scrollWidth;
+    })
+    window.addEventListener('scroll', function() {
+        if(pageWidth >= 992) {
+            // 二次函數的兩種公式
+            // f(x) = a * x平方 + b * x + c
+            // f(x) = a(x - h)平方 + k
+            // 結果函數公式沒用到
+            value = window.scrollY;
+            console.log(value);
+            for(let i = 0; i < worksOverview_item.length; i++){
+                // 用transform讓物件移動
+                // 移動距離為 卷軸滾動距離 - (物件頂端所在的高度 - nav的物件高度)
+                worksOverview_text[i].style.transform = 'translateY(' + 0.25 * (value - worksOverview_item[i].offsetTop + sec_mainNav_height * 1.5) + 'px)';
+                //worksOverview_img[i].style.transform = 'translateY(' + 0.35 * (value - worksOverview_item[i].offsetTop + sec_mainNav_height * 1.5) + 'px)';
+                worksOverview_viewMore_btn[i].style.transform = 'translateY(' + 0.1 * (value - worksOverview_item[i].offsetTop + sec_mainNav_height * 1.5) + 'px)';
+            }
+        } else {
+            worksOverview_text[i].style.transform = 0 + 'px';
+            worksOverview_img[i].style.transform = 0 + 'px';
+        }
+    })
+})
